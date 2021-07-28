@@ -93,7 +93,7 @@ section {
 }
 
 .card button {
-    border: 2px solid white;
+    border: 2px solid var(--neu-very-light-gray);
     transition: all 0.3s;
 }
 
@@ -110,7 +110,7 @@ section {
 }
 
 .card button:hover {
-    border: 2px solid white;
+    border: 2px solid var(--neu-very-light-gray);
     color: white;
     background-color: transparent;
 }
