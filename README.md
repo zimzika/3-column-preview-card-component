@@ -17,9 +17,12 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+## Links
 
+- Solution URL: [Here](https://github.com/zimzika/3-column-preview-card-component)
+- Live Site URL: [Here](https://zimzika.github.io/3-column-preview-card-component/)
 
 ## Author
 
-- Frontend Mentor [@zimzika](https://www.frontendmentor.io/profile/zimzika)
-- Github [@zimzika](https://www.github.com/zimzika)
+- Frontend Mentor - [@zimzika](https://www.frontendmentor.io/profile/zimzika)
+- Github - [@zimzika](https://www.github.com/zimzika)
