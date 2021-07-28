@@ -93,6 +93,7 @@ section {
 }
 
 .card button {
+    border: 2px solid white;
     transition: all 0.3s;
 }
 
@@ -108,19 +109,10 @@ section {
     color: var(--prim-very-dark-cyan);
 }
 
-.card:nth-child(1) button:hover {
+.card button:hover {
+    border: 2px solid white;
     color: white;
-    background-color: black;
-}
-
-.card:nth-child(2) button:hover {
-    color: white;
-    background-color: black;
-}
-
-.card:nth-child(3) button:hover {
-    color: white;
-    background-color: black;
+    background-color: transparent;
 }
 
 .attribution {
