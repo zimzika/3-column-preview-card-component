@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --prim-bright-orange: hsl(31, 77%, 52%);
+    --prim-dark-cyan: hsl(184, 100%, 22%);
+    --prim-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --neu-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neu-very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    min-width: 300px;
+    margin: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    min-width: 250px;
+    height: 450px;
+    width: 350px;
+}
+
+.card .content {
+    padding: 40px;
+    max-width: 280px;
+}
+
+.card .icon {
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card p {
+    color: var(--neu-transparent-white);
+    margin-bottom: 70px;
+}
+
+.card button {
+    color: black;
+    background-color: var(--neu-very-light-gray);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 160px;
+    height: 45px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+.card:nth-child(1) {
+    background-color: var(--prim-bright-orange);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.card:nth-child(2) {
+    background-color: var(--prim-dark-cyan);
+}
+
+.card:nth-child(3) {
+    background-color: var(--prim-very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.card button {
+    transition: all 0.3s;
+}
+
+.card:nth-child(1) button {
+    color: var(--prim-bright-orange);
+}
+
+.card:nth-child(2) button {
+    color: var(--prim-dark-cyan);
+}
+
+.card:nth-child(3) button {
+    color: var(--prim-very-dark-cyan);
+}
+
+.card:nth-child(1) button:hover {
+    color: white;
+    background-color: black;
+}
+
+.card:nth-child(2) button:hover {
+    color: white;
+    background-color: black;
+}
+
+.card:nth-child(3) button:hover {
+    color: white;
+    background-color: black;
+}
+
+.attribution {
+    position: relative;
+    font-size: 0.75em;
+    line-height: 20px;
+    text-align: center;
+    color: var(--prim-dark-cyan);
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: var(--prim-bright-orange);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.attribution a:hover {
+    color: var(--prim-very-dark-cyan);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 410px;
+    }
+
+    .card p {
+        margin-bottom: 25px;
+    }
+
+    .card:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .card:nth-child(3) {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .attribution {
+        position: relative;
+        margin-top: 20px;
+    }
+}
